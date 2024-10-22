@@ -3,13 +3,13 @@
 #include <time.h>
 
 /**
- * main - Entry point
- * 
- * Description: Generates a random number, checks the last digit,
- * and prints a message based on the value of the last digit.
- *
- * Return: Always 0 (Success)
- */
+* main - Entry point
+* 
+* Description: Generates a random number, checks the last digit,
+* and prints a message based on the value of the last digit.
+*
+* Return: Always 0 (Success)
+*/
 int main(void)
 {
 int n;
