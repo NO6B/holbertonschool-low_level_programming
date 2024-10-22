@@ -11,7 +11,8 @@
 /* betty style doc for function main goes there */
 int main(void)
 {
-char *lettre = "abcdefghijklmnopqrstuvwxyz\n";
-putchar(*lettre);
+char lettre[]= "abcdefghijklmnopqrstuvwxyz\n";
+puts(lettre);
+putchar(*"");
 return (0);
 }
