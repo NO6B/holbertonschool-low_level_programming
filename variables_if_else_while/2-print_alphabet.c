@@ -11,7 +11,7 @@
 /* betty style doc for function main goes there */
 int main(void)
 {
-char *lettre = "abcdefghijklmnopqrstuvwxyz";
- putchar(*lettre);
+char *lettre = "abcdefghijklmnopqrstuvwxyz\n";
+putchar(*lettre);
 return (0);
 }
