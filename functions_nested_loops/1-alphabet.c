@@ -5,7 +5,7 @@
  *
  * Return: Always 0 (Success)
  */
-void printAlphabet(void)
+void print_alphabet(void)
 {
     write(1, "abcdefghijklmnopqrstuvwxyz\n", 27);
     printAlphabet();
