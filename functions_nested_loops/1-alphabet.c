@@ -1,11 +1,8 @@
+#include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <unistd.h>
 #include <time.h>
-void printAlphabet() 
-{
-write(1, "abcdefghijklmnopqrstuvwxyz\n", 27);
-}
 /**
  * main - Entry point
  *
