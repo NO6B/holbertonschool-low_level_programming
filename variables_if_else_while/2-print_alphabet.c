@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <unistd.h>
 #include <time.h>
 /**
  * main - Entry point
@@ -11,8 +12,6 @@
 /* betty style doc for function main goes there */
 int main(void)
 {
-char lettre[]= "abcdefghijklmnopqrstuvwxyz\n";
-puts(lettre);
-putchar(*"");
+write(1, "abcdefghijklmnopqrstuvwxyz\n", 26);
 return (0);
 }
