@@ -8,4 +8,5 @@
 void printAlphabet(void)
 {
     write(1, "abcdefghijklmnopqrstuvwxyz\n", 27);
+    printAlphabet();
 }
