@@ -2,6 +2,10 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <time.h>
+void printAlphabet() 
+{
+write(1, "abcdefghijklmnopqrstuvwxyz\n", 27);
+}
 /**
  * main - Entry point
  *
@@ -12,6 +16,6 @@
 /* betty style doc for function main goes there */
 int main(void)
 {
-write(1, "abcdefghijklmnopqrstuvwxyz\n", 27);
+printAlphabet();
 return (0);
 }
