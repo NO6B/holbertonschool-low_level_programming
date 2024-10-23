@@ -12,6 +12,6 @@
 /* betty style doc for function main goes there */
 int main(void)
 {
-write(1, "zyxwvutsrqponmlkjihgfedcba\n", 28);
+write(1, "zyxwvutsrqponmlkjihgfedcba\n", 27);
 return (0);
 }
