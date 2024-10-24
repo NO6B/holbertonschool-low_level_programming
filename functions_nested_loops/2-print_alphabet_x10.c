@@ -1,16 +1,14 @@
+#include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
 /**
- * print_alphabet - utilizes on the _putchar function to print
- *                 the alphabet a - z
+ * print_alphabet - utilise printf pour print alphabet
+ *              
 */
-int main(int argc, char const *argv[])
+void print_alphabet_x10(void)
 {
-int count=0;
+ int count=0;
 while (count<10)
-{
 printf("abcdefghijklmnopqrstuvwxyz\n");
-count++;
-}
-return (0);
+ count++;
 }
