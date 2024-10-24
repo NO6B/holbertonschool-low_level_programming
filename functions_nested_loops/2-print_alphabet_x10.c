@@ -1,3 +1,4 @@
+#include <unistd.h>
 #include <stdio.h>
 #include "main.h"
 /**
@@ -6,16 +7,12 @@
 void print_alphabet_x10(void)
 {
     int count = 0;
-
+    char alphabet[]="abcdefghijklmnopqrstuvwxyz\n";
+    
     while (count < 10)
     {
-        char i = 'a';
-        while (i <= 'z')
-        {
-            putchar(i);
-            i++;
-        }
-        putchar('\n');
-        count++;
+        write(1 ,alphabet, 27);
+        count++;           
     }
+    
 }
