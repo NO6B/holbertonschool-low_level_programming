@@ -1,0 +1,12 @@
+#include "main.h"
+#include <stdio.h>
+#include <ctype.h>
+int _islower(int c){
+if (islower(c)){
+  printf("c = |%c| is lower case ")
+    return 1;
+}else{
+printf("c = |%c| is not lowercase")
+  return 0;
+}
+}
