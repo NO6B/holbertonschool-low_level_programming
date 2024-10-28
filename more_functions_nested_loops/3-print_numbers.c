@@ -3,16 +3,14 @@
 #include "main.h"
 void print_numbers(void)
 /**
-* print_numbers - Prints numbers from 0 to 9
-* Description: This function prints the numbers from 0 to 9 using a loop
-* and the putchar function.
-* Return: void
+* print_numbers - prints the numbers, from 0 to 9,
+* followed by a new line
 */
 {
-int i =0;
+int i = 0;
 while (i < 9)
 {
 putchar(i + '0');
 i++;
-}  
+}
 }
