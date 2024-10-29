@@ -10,8 +10,8 @@
 */
 void print_line(int n)
 {
-n = 0;
-while (n < 10)
+int i = 1;
+while (i < n)
 {
 _putchar('_');
 n++;
