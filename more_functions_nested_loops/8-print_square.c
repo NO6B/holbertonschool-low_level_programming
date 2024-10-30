@@ -21,9 +21,9 @@ for (h = 0; h < size ; h++)
 {
 for (l = 0; l < size; l++)
 {
-_putchar('#');
+putchar('#');
 }
-_putchar('\n');
+putchar('\n');
 }
 }
 }
