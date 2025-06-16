@@ -7,6 +7,6 @@ int main(void)
 {
 for (int i = 0; i < 11; i++)
 printf("%d", i);
- printf("\n");
+printf("\n");
 return (0);
 }
