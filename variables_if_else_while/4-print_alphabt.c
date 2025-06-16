@@ -1,3 +1,4 @@
+#include <unistd.h>
 #include <ctype.h>
 #include <stdio.h>
 /**
@@ -6,13 +7,6 @@
 */
 int main(void)
 {
-char alphabet;
-for (alphabet = 'a'; alphabet <= 'd'; alphabet++)
-putchar(alphabet);
-for (alphabet = 'f'; alphabet <= 'p'; alphabet++)
-putchar(alphabet);
-for (alphabet = 'r'; alphabet <= 'z'; alphabet++)
-putchar(alphabet);
-putchar('\n');
+write(1,"abcdfghijklmnoprstuvwxyz\n",25);
 return (0);
 }
