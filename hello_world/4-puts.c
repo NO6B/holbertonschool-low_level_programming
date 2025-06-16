@@ -1,6 +1,6 @@
 /**
  * main - Entry point of the program
- * Description: Prints the string "Programming is like building a multilingual puzzle"
+ * Description: Prints the string "Programming is like building a puzzle"
  * followed by a new line using the puts function.
  * Return: Always 0 (Success)
  */
