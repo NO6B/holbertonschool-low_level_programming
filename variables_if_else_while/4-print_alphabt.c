@@ -7,6 +7,6 @@
 */
 int main(void)
 {
-write(1,"abcdfghijklmnoprstuvwxyz\n",25);
+write(1, "abcdfghijklmnoprstuvwxyz\n", 25);
 return (0);
 }
