@@ -1,0 +1,18 @@
+#include <ctype.h>
+#include "main.h"
+#include <stdio.h>
+/**
+ * print_alphabet - Entry point
+ * Return:0
+ */
+int _islower(int c)
+c = 'a';  
+{
+if (islower(c))
+{   
+return(1);
+}
+else{
+return(0);
+}
+}
