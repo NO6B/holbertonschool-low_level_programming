@@ -1,11 +1,11 @@
-include "main.h"
+#include "main.h"
 #include <stdio.h>
 
 
 void print_alphabet(void)
 {
-char alphabet = 'a';
-for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
-putchar(alphabet);
+char c = 'a';
+for (c = 'a'; c <= 'z'; c++)
+putchar(c);
 putchar('\n');
 }
