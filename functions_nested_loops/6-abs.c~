@@ -1,0 +1,12 @@
+#include <stdlib.h>
+#include "main.h"
+/**
+ * _int_abs -
+ * @r: int
+ *
+ * Return: fonction
+ */
+int _abs(int r)
+{
+return (abs(r));
+}
