@@ -4,5 +4,13 @@
 #include <stdio.h>
 void _putchar()
 {
-  write(1, "_putchar\n" ,9);
+  putchar('_');
+  putchar('p');
+  putchar('u');
+  putchar('t');
+  putchar('c');
+  putchar('h');
+  putchar('a');
+  putchar('r');
+  putchar('\n');
 }
