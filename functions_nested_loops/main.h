@@ -1,5 +1,5 @@
 #ifndef FONCTIONS_H
 #define FONCTIONS_H
 void print_alphabet(void);
-int _putchar(c);
+int _putchar(int c);
 #endif
