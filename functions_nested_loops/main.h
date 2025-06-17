@@ -2,6 +2,7 @@
 #define FONCTIONS_H
 void print_alphabet(void);
 int print_sign(int n);
+int print_last_digit(int);
 int _abs(int);
 int _isalpha(int c);
 int _islower(int c);
