@@ -1,6 +1,7 @@
+#include "main.h"
+#include <ctype.h>
 #include <unistd.h>
 #include <stdio.h>
-#include "main.h"
 /**
 * main - Entry point
 * Return: Always 0 (Success)
