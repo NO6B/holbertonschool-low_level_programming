@@ -2,17 +2,20 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * print_alphabet - Entry point
- * Return:0
+ * _islower - Checks if a character is a lowercase letter
+ * @c: The character to check (ASCII code)
+ *
+ * Return: 1 if lowercase, 0 otherwise
  */
-int _islower(int c)  
+int _islower(int c)
 {
-c='a';  
+c = 'a';
 if (islower(c))
-{   
-return(1);
+{
+return (1);
 }
-else{
-return(0);
+else
+{
+return (0);
 }
 }
