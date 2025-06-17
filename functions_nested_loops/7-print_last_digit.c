@@ -1,3 +1,4 @@
+# include <stdlib.h>
 /**
  * print_last_digit - print the last digit.
  * @r: The integer to compute the absolute value of.
@@ -7,6 +8,8 @@
 #include "main.h"
 int print_last_digit(int r)
 {
-r=98;  
-return (r % 10);
+r = r % 10;
+_putchar('0' + r);
+return (abs(r));
 }
+
