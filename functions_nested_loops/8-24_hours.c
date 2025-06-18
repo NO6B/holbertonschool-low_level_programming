@@ -11,12 +11,16 @@ void jack_bauer(void)
 {
 int heure = 0;
 int minute = 0;
-for (minute = 0; minute < 60; minute++)
+for (minute = 0; minute < 24; minute++)
 {
-printf("00:%d\n", minute);
-}
 for (heure = 0; heure < 60; heure++)
 {
-printf("%d:59\n", heure);
+putchar('0' + minute / 10);
+putchar('0' + minute % 10);
+putchar(':');
+putchar('0' + heure / 10);
+putchar('0' + heure % 10);
+putchar('\n');
+}
 }
 }
