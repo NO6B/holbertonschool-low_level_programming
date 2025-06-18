@@ -1,6 +1,7 @@
 #ifndef FONCTIONS_H
 #define FONCTIONS_H
 void print_alphabet(void);
+void print_to_98(int n);
 int print_sign(int n);
 int add(int, int);
 void jack_bauer(void);
