@@ -8,17 +8,17 @@
  */
 void jack_bauer(void)
 {
-int heure = 0;
-int minute = 0;
-for (minute = 0; minute < 24; minute++)
+int h = 0;
+int m = 0;
+for (m = 0; m < 24; m++)
 {
-for (heure = 0; heure < 60; heure++)
+for (h = 0; h < 60; h++)
 {
-putchar('0' + minute / 10);
-putchar('0' + minute % 10);
+putchar('0' + m / 10);
+putchar('0' + m % 10);
 putchar(':');
-putchar('0' + heure / 10);
-putchar('0' + heure % 10);
+putchar('0' + h / 10);
+putchar('0' + h % 10);
 putchar('\n');
 }
 }
