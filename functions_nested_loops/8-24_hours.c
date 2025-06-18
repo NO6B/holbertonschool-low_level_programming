@@ -14,12 +14,12 @@ for (m = 0; m < 24; m++)
 {
 for (h = 0; h < 60; h++)
 {
-putchar('0' + m / 10);
-putchar('0' + m % 10);
-putchar(':');
-putchar('0' + h / 10);
-putchar('0' + h % 10);
-putchar('\n');
+_putchar('0' + m / 10);
+_putchar('0' + m % 10);
+_putchar(':');
+_putchar('0' + h / 10);
+_putchar('0' + h % 10);
+_putchar('\n');
 }
 }
 }
