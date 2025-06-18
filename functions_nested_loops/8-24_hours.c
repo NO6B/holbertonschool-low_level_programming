@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdio.h>
-#include <stdlib.h>
 /**
  * jack_bauer - print minute of the day of .
  * void : The integer to compute the absolute value of.
