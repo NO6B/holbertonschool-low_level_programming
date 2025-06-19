@@ -18,9 +18,8 @@ printf("%d", y * x);
 if (x < 9)
 printf(",  ");
 }
-printf("$\n");  
-}
-printf("\n"); 
+printf("\n");  
+} 
 for (k = 0; k < 10; k++)
 {
 for (j = 0; j < 10; j++)
@@ -29,6 +28,6 @@ printf("%d", k * j);
 if (j < 9)
 printf(",..");
 }
-printf("$\n");
+printf("\n");
 }
 }
