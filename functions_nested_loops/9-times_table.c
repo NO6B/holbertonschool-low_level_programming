@@ -7,11 +7,14 @@
  * Return: Nothing (void function).
  */
 void times_table(void)
-for (int y = 0; y < 10 ; y++)
 {
-for (int x = 0; x < 10 ; x++)
+int x, y;
+for (y = 0; y < 10 ; y++)
 {
-printf("%d ", y * x);
+for (x = 0; x < 10 ; x++)
+{
+printf("%d,  ", y * x);
 }
 printf("\n");
+}
 }
