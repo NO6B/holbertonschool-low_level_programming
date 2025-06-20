@@ -15,8 +15,8 @@ for (x = 0; x < 10; x++)
 {
 printf("%d", y * x);
 if (x < 9)
-printf(",  ");
+_putchar(',');
 }
-putchar('\n');  
+_putchar('\n');  
 } 
 }
