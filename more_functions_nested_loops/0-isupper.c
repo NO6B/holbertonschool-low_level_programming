@@ -9,9 +9,20 @@
  */
 int _isupper(int c)
 {
+<<<<<<< HEAD
     if (isupper(c))
     {
 return (1);
+=======
+if (isupper(c))
+{
+return (1);
+}
+else
+{
+return (0);
+}
+>>>>>>> ecc0a6814842269ccd3332b7b764538b63303e84
 }
 else
 {
