@@ -1,28 +1,26 @@
 #include <stdio.h>
+
 /**
- * main - Prints 0 to 100 with FizzBuzz logic
+ * main - Affiche de 0 à 100, avec FizzBuzz pour les multiples
  *
  * Return: 0
  */
-int main(int argc, char const *argv[])
+int main(void)
 {
-for (int i = 0; i <= 100; i++)
-{
-            printf("%d \n",i);
-            if (i %3 == 0)
-            {
-            printf("Fizz") ;
-            }
-            else if (i %5 == 0)
-            {
-                printf("Buzz");
-            }
-            else if (i %3 ==0 || i %5 == 0)
-            {
-                printf("FizzBuzz");
-            }
-        }
-        
-        return 0;
+    int i;
+    for (i = 0; i <= 100; i++)
+    {
+        if (i % 3 == 0 && i % 5 == 0)
+            printf("FizzBuzz\n");
+        else if (i % 3 == 0)
+            printf("Fizz");
+        else if (i % 5 == 0)
+            printf("Buzz");
+        else
+            printf("%d", i);
+
+        printf(" ");
     }
 
+    return 0;
+}
