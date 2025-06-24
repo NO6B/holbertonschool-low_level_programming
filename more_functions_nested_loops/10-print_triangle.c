@@ -4,7 +4,11 @@
  * @size: Height of the triangle
  */
 void print_triangle(int size)
-{int i, j;
+{ 
+  if (size <= 0)
+    _putchar('\n');
+    
+     int i, j;
     for (i = 0; i < size; i++)
     {
     int k;
@@ -17,7 +21,6 @@ void print_triangle(int size)
     _putchar('#');
     }      
     _putchar('\n');
-    }
- if (size <= 0)
-     _putchar('\n');
+
+  }
 }
