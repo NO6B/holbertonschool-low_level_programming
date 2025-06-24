@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * print_triangle - Prints a right-aligned triangle with '#'
  * @size: Height of the triangle
@@ -10,14 +10,14 @@ void print_triangle(int size)
     int k;
     for (k = size; k > i; k--)
     {
-    printf(" ");
+    _putchar(' ');
     }
     for (j = 0; j <= i; j++)
     {
-    printf("#");
+    _putchar('#');
     }      
-    printf("\n");
+    _putchar('\n');
     }
  if (size <= 0)
-     printf("\n");
+     _putchar('\n');
 }
