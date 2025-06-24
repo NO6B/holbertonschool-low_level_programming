@@ -5,10 +5,10 @@
  */
 void print_triangle(int size)
 { 
-  if (size <= 0)
+   int i, j;
+    if (size <= 0)
     _putchar('\n');
-    
-     int i, j;
+
     for (i = 0; i < size; i++)
     {
     int k;
