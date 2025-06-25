@@ -12,7 +12,7 @@ while (s[i] != '\0')
 {
 i++;
 }
-for (j = i - 1; j >= 0; j--)
+for (j = i - 1; j >= 0; j--) // i - 1 pour ne pas afficher le dernier caractère invisible
 {
 _putchar(s[j]);
 }
