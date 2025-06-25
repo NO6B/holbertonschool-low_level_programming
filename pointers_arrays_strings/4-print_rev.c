@@ -1,5 +1,9 @@
 #include "main.h"
-
+/**
+ * reverse_string - Inverse une chaîne de caractères
+ * @s: Chaine a inverser
+ * Return: Rien
+ */
 void print_rev(char *s)
 {
     int i = 0;
