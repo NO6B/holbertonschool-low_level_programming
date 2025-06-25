@@ -1,5 +1,8 @@
 #include "main.h"
-
+/**
+ * _puts - Affiche une chaîne
+ * @str: Chaîne à afficher
+ */
 void _puts(char *str)
 {
     int i = 0;
