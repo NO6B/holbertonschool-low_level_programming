@@ -19,8 +19,8 @@ while (str[i] != '\0')
 j=i/2;
 while (str[j]!= '\0')
 {
-    _putchar(str[j]);
-    j++;
+_putchar(str[j]);
+j++;
 }
 _putchar('\n');
 }
