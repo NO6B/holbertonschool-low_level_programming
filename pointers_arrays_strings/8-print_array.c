@@ -7,9 +7,10 @@
  * Return: void
  */
 void print_array(int *a, int n)
-{ int i;
-  for (i = 0; n > i ; i++)
-  { 
-    printf("%d, ", a[i]);
-  }
+{
+int i;
+for (i = 0; n > i ; i++)
+{
+printf("%d, ", a[i]);
+}
 }
