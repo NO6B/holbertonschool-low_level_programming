@@ -7,14 +7,18 @@
  * Return: void
  */
 void print_array(int *a, int n)
-{ int i;
-  for (i = 0; n > i ; i++)
-  { 
-    printf("%d", a[i]);
-    if (i != n -1)
+{
+    int i;
+    if (n > 0)
     {
-    printf(",");
-    printf(" ");
+        for (i = 0; i < n; i++)
+        {
+            printf("%d", a[i]);
+            if (i != n - 1)
+            {
+                printf(", ");
+            }
+        }
+        printf("\n");
     }
-  }
 }
