@@ -12,7 +12,7 @@ int j = 0;
 while (dest[j] != '\0')
 {
 j++;
-} 
+}
 while (src[i] != '\0')
 {
 dest[j] = src[i];
