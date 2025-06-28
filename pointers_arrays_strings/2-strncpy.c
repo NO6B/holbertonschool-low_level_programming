@@ -1,16 +1,17 @@
-char *_strncpy(char *dest, char *src, int n)
+#include "main.h"
 /**
  * _strncpy - Copies function
  * @dest: Destination
- * @src: Source 
- * @n: Maximum number 
+ * @src: Source
+ * @n: Maximum number
  * Return: Pointer to the destination buffer
  */
+char *_strncpy(char *dest, char *src, int n)
 {
 int i;
-for (i = 0; src[i] != '\0' && i < n; i++) 
+for (i = 0; src[i] != '\0' && i < n; i++)
 {
-dest[i] = src[i];/*le premiers element de src est copier a la place du premier element de dest */
+dest[i] = src[i];
 }
 for (; i < n; i++)
 {
