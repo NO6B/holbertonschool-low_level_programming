@@ -6,13 +6,13 @@
  */
 char *string_toupper(char *str)
 {
-char min[] ="abcdefghijklmnopqrstuvwxyz";
+char min[] = "abcdefghijklmnopqrstuvwxyz";
 int i;
 int j;
-char maj[]="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+char maj[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 for (i = 0; str[i] != '\0'; i++)
 {
-for (j = 0;maj[j] != '\0'; j++)
+for (j = 0; maj[j] != '\0'; j++)
 {
 if (str[i] == min[j])
 {
@@ -22,7 +22,7 @@ else if (str[i] == maj[j])
 {
 str[i] = maj[j];
 }
-} 
+}
 }
 return (str);
 }
