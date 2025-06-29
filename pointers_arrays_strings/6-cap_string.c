@@ -1,12 +1,15 @@
 #include "main.h"
-
+/**
+ * *cap_string - transforme lowercase letters of a string to uppercase.
+ * @str: Pointeur vers la chaîne de caractères
+ * Return: str
+ */
 char *cap_string(char *str)
 {
-    char sp[] = ",;.!?\" (){}";
-    int i, j;
-
-    for (i = 0; str[i] != '\0'; i++)
-    {
+char sp[] = ",;.!?\" (){}";
+int i, j;
+for (i = 0; str[i] != '\0'; i++)
+{
         for (j = 0; sp[j] != '\0'; j++)
         {
             if (str[i] == sp[j])
