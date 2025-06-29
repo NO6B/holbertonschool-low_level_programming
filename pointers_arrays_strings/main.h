@@ -13,9 +13,4 @@ char *_strcat(char *dest, char *src);
 char *_strncat(char *dest, char *src, int n);
 char *_strncpy(char *dest, char *src, int n);
 int _strcmp(char *s1, char *s2);
-<<<<<<< HEAD
-char *cap_string(char *);
-=======
-char *leet(char *);
-char *string_toupper(char *);
->>>>>>> 5244065de8bd443bb327e9794538ddfbeda5c667
+void reverse_array(int *a, int n);
