@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.h>
+
 /**
  * _strchr - Locate first occurrence of char in string
  * @s: String to search
@@ -11,11 +13,11 @@ char *_strchr(char *s, char c)
 
     for (i = 0; s[i] != '\0'; i++)
     {   
-         if (s[i] == c)
-         {
-            return &s[i];    
-         }
-    }
-    s[i] = '\0';
-    return (s);   
+        if (s[i] == c)
+            return &s[i];
+              
+    }        
+    
+ 
+    return NULL;   
 }
