@@ -15,7 +15,7 @@ unsigned int _strspn(char *s, char *accept)
             if (s[i] == accept[j])
                 break;
 
-        if (!accept[j])  /* Si on a parcouru tout accept sans trouver s[i]*/
+        if (s[i] != accept[j])  /* Si on a parcouru tout accept sans trouver s[i]*/
             return i;
 
         i++;
