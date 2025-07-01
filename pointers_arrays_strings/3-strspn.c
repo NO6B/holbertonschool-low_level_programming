@@ -14,8 +14,8 @@ for (j = 0; accept[j] != '\0'; j++)
 if (s[i] == accept[j])
 break;
 if (s[i] != accept[j])
-return i;
+return (i);
 i++;
 }
-return i;
+return (i);
 }
