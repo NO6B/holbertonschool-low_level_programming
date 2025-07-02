@@ -16,10 +16,7 @@ int _strcmp(char *s1, char *s2);
 void reverse_array(int *a, int n);
 char *_memset(char *s, char b, unsigned int n);
 char *_memcpy(char *dest, char *src, unsigned int n);
-<<<<<<< HEAD
 char *_strstr(char *haystack, char *needle);
-=======
 char *_strchr(char *s, char c);
 unsigned int _strspn(char *s, char *accept);
 char *_strpbrk(char *s, char *accept);
->>>>>>> ee365fbfafb8a7bc2445953a84d5872942b574b3
