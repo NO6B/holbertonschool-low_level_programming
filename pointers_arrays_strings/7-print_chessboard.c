@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
  * print_chessboard - Prints a 8x8 chessboard.
  * @a: 2D array of characters (8 columns).
