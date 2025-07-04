@@ -5,8 +5,12 @@
  * @argv: argument vector
  * Return: 0 on success
  */
+#include <stdio.h>
+
 int main(int argc, char *argv[])
 {
-    printf("%d", argc);
+    (void)argv;
+    printf("%d\n", argc - 1);
     return 0;
 }
+
