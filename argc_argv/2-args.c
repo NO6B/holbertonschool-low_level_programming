@@ -1,9 +1,9 @@
 #include <stdio.h>
 int main(int argc, char *argv[])
 /**
- * main - Prints the program name
- * @argc: argument count
- * @argv: argument vector
+ * main - prints all arguments it receives
+ * @argc: number of arguments
+ * @argv: array of argument strings
  * Return: 0 on success
  */
 {
