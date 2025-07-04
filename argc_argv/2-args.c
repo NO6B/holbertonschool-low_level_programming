@@ -4,7 +4,6 @@ int main(int argc, char *argv[])
  * main - Prints the program name
  * @argc: argument count
  * @argv: argument vector
- * @i: argument
  * Return: 0 on success
  */
 {
