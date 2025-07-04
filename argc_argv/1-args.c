@@ -7,6 +7,6 @@
  */
 int main(int argc, char *argv[])
 {
-    printf("%d", argc);
-    return 0;
+printf("%d", argc);
+return 0;
 }
