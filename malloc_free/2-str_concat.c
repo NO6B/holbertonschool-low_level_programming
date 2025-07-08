@@ -11,9 +11,9 @@ char *str_concat(char *s1, char *s2)
 int i = 0, j = 0, k, l;
 char *tab;
 while (s1[i] != '\0')
-i++;  /*i = longueur de s1*/
+i++;/*i = longueur de s1*/
 while (s2[j] != '\0')
-j++;  /*j = longueur de s2 */
+j++;/*j = longueur de s2 */
 tab = malloc((i + j + 1) * sizeof(char));
 if (tab == NULL)
 return (NULL);
@@ -23,6 +23,6 @@ tab[k] = s1[k];
 /*Copier s2 dans tab à la suite*/
 for (l = 0; l < j; l++)
 tab[k + l] = s2[l];
-tab[k + l] = '\0'; /*Terminer la chaîne*/
+tab[k + l] = '\0';/*Terminer la chaîne*/
 return (tab);
 }
