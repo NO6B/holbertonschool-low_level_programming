@@ -1,9 +1,10 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * string_nconcat -  function that allocates memory for an array,
- * @size : size of tab
- * Return: Pointer, or NULL
+ * _calloc - Allocates memory for an array and initializes it to zero
+ * @nmemb: Number of elements
+ * @size: Size of each element
+ * Return: Pointer to the allocated memory or NULL on failure
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
@@ -11,19 +12,17 @@ void *_calloc(unsigned int nmemb, unsigned int size)
     unsigned int i;
     if (nmemb ==0 || size == 0)
     {
-       return NULL;
+       return (NULL);
     }
     
     tab = malloc(nmemb * size);
     if (tab == NULL)
-    {
-        return NULL;
-    }
+        return (NULL);
     
     /*initialiser manuellement chaque element du tableau à 0 */
     for (i = 0; i < nmemb; i++)
         tab[i] = 0;
 
-    return tab;
+    return (tab);
 
 }
