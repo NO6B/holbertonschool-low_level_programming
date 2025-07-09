@@ -11,15 +11,15 @@ int *tab;
 unsigned int i;
 if (nmemb ==0 || size == 0)
 {
-return NULL;
+return (NULL);
 }
 tab = malloc(nmemb * size);
 if (tab == NULL)
 {
-return NULL;
+return (NULL);
 }
 /*initialiser manuellement chaque element du tableau à 0 */
 for (i = 0; i < nmemb; i++)
 tab[i] = 0;
-return tab;
+return (tab);
 }
