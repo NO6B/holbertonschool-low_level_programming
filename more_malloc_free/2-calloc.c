@@ -14,7 +14,7 @@ if (nmemb == 0 || size == 0)
 {
 return (NULL);
 }
-tab = malloc(nmemb * size);
+tab = malloc(size * nmemb);
 if (tab == NULL)
 return (NULL);
 /*initialiser manuellement chaque element du tableau à 0 */
