@@ -4,6 +4,7 @@
  * string_nconcat - function that concatenates two strings
  * @s1: First string
  * @s2: Second string
+ * @n: integer
  * Return: Pointer to new string, or NULL
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
@@ -12,7 +13,7 @@ char *tab;
 unsigned int j, k, i, m;
 for (i = 0; s1[i] != '\0'; i++)
 {}
-for (j = 0;s2[j]; j++)
+for (j = 0; s2[j]; j++)
 {}
 if (n < j)
 j = n;
