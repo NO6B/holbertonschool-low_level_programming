@@ -8,16 +8,15 @@
  */
 int *array_range(int min, int max)
 {
-    int *tab;
-    int i;
-    /*permet davoir lecart entre max et min et +1 permet dinclure la position 0*/
-    tab = malloc(sizeof(int) * (max - min + 1));
-    if (tab == NULL)
-        return NULL;
-    
-    for (i = 0; i <= max - min; i++)
-    {   
-        tab[i] = min + i;
-    }
-    return (tab);
+int *tab;
+int i;
+/*permet davoir lecart entre max et min et +1 permet dinclure la position 0*/
+tab = malloc(sizeof(int) * (max - min + 1));
+if (tab == NULL)
+return (NULL);
+for (i = 0; i <= max - min; i++)
+{
+tab[i] = min + i;
+}
+return (tab);
 }
