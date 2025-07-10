@@ -8,22 +8,18 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-    void *tab;
-    unsigned int i;
-    char *c;
-    if (nmemb ==0 || size == 0)
-    {
-       return (NULL);
-    }
-    
-    tab = malloc(size * nmemb);
-    if (tab == NULL)
-        return (NULL);
-    
-    /*initialiser manuellement chaque element du tableau à 0 */
-    for (i = 0; i < nmemb; i++)
-        c[i] = 0;
-
-    return (tab);
-
+void *tab;
+unsigned int i;
+char *c;
+if (nmemb ==0 || size == 0)
+{
+return (NULL);
+}    
+tab = malloc(size * nmemb);
+if (tab == NULL)
+return (NULL);
+/*initialiser manuellement chaque element du tableau à 0 */
+for (i = 0; i < nmemb; i++)
+c[i] = 0;
+return (tab);
 }
