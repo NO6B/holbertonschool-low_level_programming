@@ -12,7 +12,7 @@ char *tab;
 unsigned int j, k, i, m;
 for (i = 0; s1[i] != '\0'; i++)
 {}
-for (j = 0;s2[j]; j++)
+for (j = 0; s2[j]; j++)
 {}
 if (n < j)
 j = n;
