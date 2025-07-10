@@ -20,7 +20,7 @@ if (tab == NULL)
 return (NULL);
 c = (char *)tab;
 /*initialiser manuellement chaque element du tableau à 0 */
-for (i = 0; i < nmemb; i++)
+for (i = 0; i < nmemb * size; i++)
 c[i] = 0;
 return (tab);
 }
