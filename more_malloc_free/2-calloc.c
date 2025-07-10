@@ -18,6 +18,7 @@ return (NULL);
 tab = malloc(size * nmemb);
 if (tab == NULL)
 return (NULL);
+c = (char *)tab;
 /*initialiser manuellement chaque element du tableau à 0 */
 for (i = 0; i < nmemb; i++)
 c[i] = 0;
