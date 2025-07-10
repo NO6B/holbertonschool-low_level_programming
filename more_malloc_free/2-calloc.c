@@ -14,7 +14,7 @@ char *c;
 if (nmemb == 0 || size == 0)
 {
 return (NULL);
-}    
+}
 tab = malloc(size * nmemb);
 if (tab == NULL)
 return (NULL);
