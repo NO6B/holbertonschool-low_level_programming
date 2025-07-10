@@ -10,8 +10,8 @@ int *array_range(int min, int max)
 {
     int *tab;
     int i;
-
-    tab = malloc(sizeof(int) * (max - min));
+    /*permet davoir lecart entre max et min et +1 permet dinclure la position 0*/
+    tab = malloc(sizeof(int) * (max - min + 1));
     if (tab == NULL)
         return NULL;
     
