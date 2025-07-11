@@ -1,11 +1,10 @@
 #include "dog.h"
 #include <stdlib.h>
 /**
- * new_dog - Allocates and initializes a new dog_t instance
- * @name: Name of the dog
- * @age: Age of the dog
- * @owner: Owner of the dog
- * Return: Pointer to the allocated dog_t, or NULL on failure
+ * len - Gets length of a string
+ * @src: String input
+ *
+ * Return: Length + 1 for '\0'
  */
 int len(char *src)
 {
@@ -16,6 +15,13 @@ i++;
 }
 return (i + 1);
 }
+/**
+ * ctr - Copies a string
+ * @dest: Destination buffer
+ * @src: Source string
+ *
+ * Return: Pointer to dest
+ */
 char *ctr(char *dest, char *src)
 {
 int i = 0;
@@ -27,6 +33,13 @@ i++;
 dest[i] = '\0';
 return (dest);
 }
+/**
+ * new_dog - Allocates and initializes a new dog_t instance
+ * @name: Name of the dog
+ * @age: Age of the dog
+ * @owner: Owner of the dog
+ * Return: Pointer to the allocated dog_t, or NULL on failure
+ */
 dog_t *new_dog(char *name, float age, char *owner)
 {
 dog_t *new_dog;/*ajout dun nouveau pointeur a la structure dog_t*/
