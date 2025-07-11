@@ -52,7 +52,8 @@ return (NULL);
 }
 ctr(new_name, name);
 ctr(new_owner, owner);
-/*new_dog est un pointeur qui permet
+/*
+*new_dog est un pointeur qui permet
 *d’assigner à la structure dog_t l’adresse de
 *new_name dans son champ name
 */
