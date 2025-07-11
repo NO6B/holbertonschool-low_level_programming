@@ -1,6 +1,13 @@
 #include "dog.h"
 #include <stdlib.h>
-#include <string.h>
+/**
+ * new_dog - Allocates and initializes a new dog_t instance
+ * @name: Name of the dog
+ * @age: Age of the dog
+ * @owner: Owner of the dog
+ *
+ * Return: Pointer to the allocated dog_t, or NULL on failure
+ */
 int len(char *src)
 {
     int i = 0; 
@@ -8,10 +15,9 @@ int len(char *src)
     {
         i++;
     }
-   return (i + 1); 
+    return (i + 1); 
 }
-
-char *ctr(char *dest, char *src)
+    char *ctr(char *dest, char *src)
 {
     int i = 0;
     while (src[i] != '\0')
@@ -25,7 +31,7 @@ char *ctr(char *dest, char *src)
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-  dog_t *new_dog;
+    dog_t *new_dog;/*ajout dun nouveau pointeur a la structure dog_t*/
     char * new_name;
     char * new_owner;
     new_name = malloc(len(name));
@@ -44,9 +50,8 @@ dog_t *new_dog(char *name, float age, char *owner)
         return (NULL);
     }   
     ctr(new_name, name);
-
     ctr(new_owner, owner);
-
+/*new_dog est un pointeur qui permet d’assigner à la structure dog_t l’adresse de new_name dans son champ name*/
     new_dog ->name = new_name;
     new_dog ->owner = new_owner;
     new_dog ->age = age;
