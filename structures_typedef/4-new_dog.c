@@ -30,8 +30,8 @@ return (dest);
 dog_t *new_dog(char *name, float age, char *owner)
 {
 dog_t *new_dog;/*ajout dun nouveau pointeur a la structure dog_t*/
-char * new_name;
-char * new_owner;
+char *new_name;
+char *new_owner;
 new_name = malloc(len(name));
 if (new_name == NULL)
 {
@@ -43,20 +43,21 @@ if (new_dog == NULL)
 free(new_name);
 return (NULL);
 }
-new_owner=malloc(len(owner));
+new_owner = malloc(len(owner));
 if (new_owner == NULL)
 {
 free(new_dog);
 free(new_name);
 return (NULL);
-}   
+}
 ctr(new_name, name);
 ctr(new_owner, owner);
 /*new_dog est un pointeur qui permet
-d’assigner à la structure dog_t l’adresse de
-new_name dans son champ name*/
-new_dog ->name = new_name;
-new_dog ->owner = new_owner;
-new_dog ->age = age;
+*d’assigner à la structure dog_t l’adresse de
+*new_name dans son champ name
+*/
+new_dog->name = new_name;
+new_dog->owner = new_owner;
+new_dog->age = age;
 return (new_dog);
 }
