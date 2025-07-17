@@ -16,7 +16,8 @@ void print_numbers(const char *separator, const unsigned int n, ...)
     {
         x = va_arg(args, int);
         printf("%d", x);
-        if (separator != NULL)
+        /*affiche le separateur seulement si ce nest pas le dernier nombre*/
+        if (separator != NULL && i < n - 1)
         {
             printf("%s", separator);
         }
@@ -24,4 +25,5 @@ void print_numbers(const char *separator, const unsigned int n, ...)
         return;
     }
     va_end(args);
+    printf("\n");
 }
