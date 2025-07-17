@@ -2,7 +2,7 @@
 #include "variadic_functions.h"
 /**
  * sum_them_all that returns the sum of all its parameters.
- * @n: is the size of the array
+ * @n: is arguments list 
  */
 int sum_them_all(const unsigned int n, ...)
 {
