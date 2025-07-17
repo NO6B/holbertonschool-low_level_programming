@@ -14,7 +14,7 @@ if (n == 0)
 return (0);
 va_start(args, n);
 for (i = 0; i < n; i++)
-sm+= va_arg(args, int);
+sm += va_arg(args, int);
 va_end(args);
 return (sm);
 }
