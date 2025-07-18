@@ -9,14 +9,14 @@
 void print_all(const char * const format, ...)
 {
 int i = 0;
-char *s ;
+char *s;
 char *esp = "";
 va_list args;
 va_start(args, format);
-	
+
 while (format && format[i])
 {
-if (format[i] == 'c' || format[i] == 'i' || format[i] == 'f' || format[i] == 's')
+if (format[i] == 'c'||format[i] == 'i'||format[i] == 'f'||format[i] == 's')
 {
 printf("%s", esp);
 if (format[i] == 'c')
