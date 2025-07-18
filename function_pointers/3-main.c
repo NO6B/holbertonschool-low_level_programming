@@ -4,8 +4,8 @@
 
 /**
  * main - main function
- *@argc: number of arguments
- *@argv: argument vector
+ *@ argc: number of arguments
+ *@ argv: argument vector
  * return : .......
  */
 int main(int argc, char *argv[])
