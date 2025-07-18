@@ -14,7 +14,7 @@ char *s;
 int j;
 char c;
 va_list args;
-va_start(args, format);    
+va_start(args, format);
 while (format[i] != '\0')
 {
 if (format[i] == 'c')
@@ -39,7 +39,7 @@ if (s == NULL)
 printf("(nil)");
 else
 printf("%s", s);
-}    
+}
 i++;
 }
 va_end(args);
