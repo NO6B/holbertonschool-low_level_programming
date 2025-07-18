@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- * get_op_func - Picks the right math function
+ * get_op_func - Takes the math function
  * @s: Operator string
  * Return: Pointer to function or NULL
  */
