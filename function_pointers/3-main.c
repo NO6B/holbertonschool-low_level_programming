@@ -2,10 +2,10 @@
 #include <stdlib.h>
 #include "3-calc.h"
 /**
- * main - Executes calculator with user input
- * @argc: Number of arguments
- * @argv: Array of arguments
- * Return: 0 on success, exits with error code on failure
+ * main - Executes calculator
+ * @argc: Number of argument
+ * @argv: Array of argument
+ * Return: 0 on success exits with error code 
  */
 int main(int argc, char *argv[])
 {
