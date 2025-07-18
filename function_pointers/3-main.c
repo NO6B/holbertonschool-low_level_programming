@@ -5,7 +5,7 @@
  * main - Executes calculator
  * @argc: Number of argument
  * @argv: Array of argument
- * Return: 0 on success exits with error code 
+ * Return: 0 on success exits with error code
  */
 int main(int argc, char *argv[])
 {
