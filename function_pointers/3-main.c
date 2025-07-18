@@ -6,7 +6,7 @@
  * main - main function
  *@argc: number of arguments
  *@argv: argument vector
- * return : 0 
+ * return : 0
  */
 int main(int argc, char *argv[])
 {
