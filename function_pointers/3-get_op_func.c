@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- * get_op_func - renvoie la fonction correspondant à l'opérateur
+ * get_op_func - return function
  * @s: char
  */
 int (*get_op_func(char *s))(int, int)
