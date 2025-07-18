@@ -2,10 +2,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
-  * op_add - add
+  * op_add - op_add
   * @a: intiger
   * @b: integer
-  * Return: ...
+  * Return: sum
   */
 int op_add(int a, int b)
 {
