@@ -15,7 +15,8 @@ char *s;
 va_start(args, format);
 while (format[i] != '\0')
 {
-if (format[i] == 'c' || format[i] == 'i' || format[i] == 'f' || format[i] == 's')
+if (format[i] == 'c' || format[i] == 'i'
+|| format[i] == 'f' || format[i] == 's')
 {
 switch (format[i])
 {
