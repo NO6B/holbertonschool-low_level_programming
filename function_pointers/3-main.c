@@ -1,12 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "3-calc.h"
-
 /**
- * main - main function
- *@ argc: number of arguments
- *@ argv: argument vector
- * return : .......
+ * main - Executes calculator with user input
+ * @argc: Number of arguments
+ * @argv: Array of arguments
+ * Return: 0 on success, exits with error code on failure
  */
 int main(int argc, char *argv[])
 {
