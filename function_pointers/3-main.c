@@ -6,6 +6,7 @@
  * main - main function
  *@argc: number of arguments
  *@argv: argument vector
+ * return : 
  */
 int main(int argc, char *argv[])
 {
@@ -19,7 +20,7 @@ int main(int argc, char *argv[])
 
 	oprt = get_op_func(argv[2]);
 
-	if (!oprt)
+	if (oprt == NULL)
 	{
 		printf("Error\n");
 		exit(99);
