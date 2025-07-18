@@ -17,10 +17,8 @@ if (format == NULL)
 printf("\n");
 return;
 }
-
 i = 0;
 sep = "";
-
 va_start(args, format);
 while (format[i] != '\0')
 {
