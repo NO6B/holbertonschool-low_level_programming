@@ -2,9 +2,9 @@
 #include <string.h>
 
 /**
- * get_op_func - return function
- * @s: char
- * return : value
+ * get_op_func - Picks the right math function
+ * @s: Operator string
+ * Return: Pointer to function or NULL
  */
 int (*get_op_func(char *s))(int, int)
 {
