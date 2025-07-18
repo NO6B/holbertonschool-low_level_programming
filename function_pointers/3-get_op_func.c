@@ -3,6 +3,7 @@
 
 /**
  * get_op_func - renvoie la fonction correspondant à l'opérateur
+ * @s: char
  */
 int (*get_op_func(char *s))(int, int)
 {
