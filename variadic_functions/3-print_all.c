@@ -8,33 +8,42 @@
  */
 void print_all(const char * const format, ...)
 {
-int i = 0;
-char *s;
-char *esp = "";
-va_list args;
-va_start(args, format);
+    int i = 0;
+    float f;
+    char *s;
+    int j;
+    char c;
+    va_list args;
+    va_start(args, format);
+    
+   while (format[i] != '\0')
+   {
+    if (format[i] == 'c')
+    {
+        c = va_arg(args, int);
+        printf("%c, ", c);
+    }
+    else if (format[i] == 'i')
+    {
+        j = va_arg(args, int);
+        printf("%d, ", j);
+    }
+    else if (format[i] == 'f')
+    {
+        f = va_arg(args, double);
+        printf("%f, ", f);
+    }
+    else if (format[i] == 's')
+    {
+        s = va_arg(args, char*);
+        if (s == NULL)
+            printf("(nil)");
+        else
+            printf("%s", s);
+    }    
+    i++;
+   }
 
-while (format && format[i])
-{
-if (format[i] == 'c' || format[i] == 'i' 
-|| format[i] == 'f' || format[i] == 's')
-{
-printf("%s", esp);
-if (format[i] == 'c')
-printf("%c", va_arg(args, int));
-if (format[i] == 'i')
-printf("%d", va_arg(args, int));
-if (format[i] == 'f')
-printf("%f", va_arg(args, double));
-if (format[i] == 's')
-{
-s = va_arg(args, char *);
-printf("%s", s ? s : "(nil)");
-}
-esp = ", ";
-}
-i++;
-}
-va_end(args);
-printf("\n");
+    va_end(args);
+    printf("\n");
 }
