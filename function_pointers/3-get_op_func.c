@@ -4,6 +4,7 @@
 /**
  * get_op_func - return function
  * @s: char
+ * return : 0
  */
 int (*get_op_func(char *s))(int, int)
 {
