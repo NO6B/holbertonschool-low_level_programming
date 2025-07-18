@@ -9,16 +9,16 @@
 void print_all(const char * const format, ...)
 {
 	int i = 0;
-	char *s, *sep = "";
+	char *s 
+	char *esp = "";
 	va_list args;
-
 	va_start(args, format);
 
 	while (format && format[i])
 	{
 		if (format[i] == 'c' || format[i] == 'i' || format[i] == 'f' || format[i] == 's')
 		{
-			printf("%s", sep);
+			printf("%s", esp);
 			if (format[i] == 'c')
 				printf("%c", va_arg(args, int));
 			if (format[i] == 'i')
@@ -30,7 +30,7 @@ void print_all(const char * const format, ...)
 				s = va_arg(args, char *);
 				printf("%s", s ? s : "(nil)");
 			}
-			sep = ", ";
+			esp = ", ";
 		}
 		i++;
 	}
