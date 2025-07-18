@@ -8,42 +8,36 @@
  */
 void print_all(const char * const format, ...)
 {
-    int i = 0;
-    float f;
-    char *s;
-    int j;
-    char c;
-    va_list args;
-    va_start(args, format);
-    
-   while (format[i] != '\0')
-   {
-    if (format[i] == 'c')
-    {
-        c = va_arg(args, int);
-        printf("%c, ", c);
-    }
-    else if (format[i] == 'i')
-    {
-        j = va_arg(args, int);
-        printf("%d, ", j);
-    }
-    else if (format[i] == 'f')
-    {
-        f = va_arg(args, double);
-        printf("%f, ", f);
-    }
-    else if (format[i] == 's')
-    {
-        s = va_arg(args, char*);
-        if (s == NULL)
-            printf("(nil)");
-        else
-            printf("%s", s);
-    }    
-    i++;
-   }
+va_list args;
+int i = 0;
+char *s;
 
-    va_end(args);
-    printf("\n");
+va_start(args, format);
+while (format[i] != '\0')
+{
+if (format[i] == 'c' || format[i] == 'i' || format[i] == 'f' || format[i] == 's')
+{
+switch (format[i])
+{
+case 'c':
+printf("%c, ", va_arg(args, int));
+break;
+case 'i':
+printf("%d, ", va_arg(args, int));
+break;
+case 'f':
+printf("%f, ", va_arg(args, double));
+break;
+case 's':
+s = va_arg(args, char *);
+if (s == NULL)
+printf("(nil)");
+else
+printf("%s", s);
+}
+}
+i++;
+}
+va_end(args);
+printf("\n");
 }
