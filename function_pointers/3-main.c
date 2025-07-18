@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 
 	if (!oprt)
 	{
-		printf("Error\n");
+		printf("Error");
 		exit(99);
 	}
 
